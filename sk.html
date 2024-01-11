@@ -11,6 +11,7 @@
             background-color: #1877f2; /* Facebook blue */
             color: #fff; /* White text for better contrast */
         }
+
         .profile-container {
             max-width: 800px;
             margin: auto;
@@ -19,31 +20,36 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
-            align-items: flex-start; /* Align items to the start (top) */
-            justify-content: space-between;
-            flex-wrap: wrap;
+            flex-direction: column; /* Updated to column for better mobile responsiveness */
+            align-items: center; /* Center items in the container */
         }
+
         h1, h2 {
             color: #1877f2; /* Facebook blue for headers */
         }
+
         p {
             color: #333; /* Dark gray text */
         }
+
         .profile-image {
             max-width: 100px; /* Adjust the size as needed */
             border-radius: 50%;
             margin-bottom: 20px;
             order: 1; /* Move the image to the top right corner */
         }
+
         .profile-details {
             flex: 1;
-            margin-right: 20px;
+            margin-top: 20px; /* Add margin at the top for better spacing */
+            text-align: center; /* Center text in the container */
         }
     </style>
 </head>
 <body>
 
     <div class="profile-container">
+        <img class="profile-image" src="IMG-20240103-WA0006.jpg" alt="Sudhakar Kumar">
         <div class="profile-details">
             <h1>Sudhakar Kumar</h1>
             <h2>Computer Engineering Graduate</h2>
@@ -51,19 +57,17 @@
             <p>Date of Birth: 27th March 1997</p> <!-- Added line -->
             <p>Location: Patna</p>
             <p>Email: sudhakar.kumar@outlook.com</p>
-        
-           <h2>Work Experience</h2>
+
+            <h2>Work Experience</h2>
             <p>August 2019 - August 2021: Associate Consultant at Oracle Financial Service Software Limited, Pune.</p>
             <p>August 2021 - February 2022: Staff Consultant at Oracle Financial Service Software Limited, Pune.</p>
             <p>March 2022 - July 2022: Associate Technology 2 at Publicis Sapient, Bangalore.</p>
             <p>July 2022 - July 2023: Assistant Manager (System) in the Specialist Cadre Officer at State Bank of India, Navi Mumbai.</p>
             <p>Since August 2023: Lecturer (CSE) under the Government of Bihar, Patna.</p>
 
-
             <h2>Professional Background</h2>
             <p>Over the years, I've gained diverse experience, from serving as an Associate Consultant and Staff Consultant at Oracle Financial Service Software Limited to contributing as an Associate Technology 2 at Publicis Sapient. My journey continued at State Bank of India, where I served as an Assistant Manager (System) in the Specialist Cadre Officer. Currently, I am dedicated to the field of education, working as a Lecturer (CSE) under the Government of Bihar.</p>
         </div>
-        <img class="profile-image" src="IMG-20240103-WA0006.jpg" alt="Sudhakar Kumar">
     </div>
 
 </body>
